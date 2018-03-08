@@ -1,1 +1,2 @@
-web: python app.py
+release: python app.py
+web: python server.py
