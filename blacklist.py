@@ -31,5 +31,5 @@ link_blacklist = [
   'twitter.com/pamelakealer13',
   'twitter.com/kadirovrussia',
   'twitter.com/tpartynews',
-  'twobit.cc'
+  'twobit.cc/testing'
 ]

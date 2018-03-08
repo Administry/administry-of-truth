@@ -1,2 +1,3 @@
 praw
 flask
+psycopg2-binary
