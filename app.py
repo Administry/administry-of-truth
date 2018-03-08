@@ -1,12 +1,13 @@
 import praw
 import os
+from blacklist import link_blacklist
 
 ENV_CLIENT_ID = os.environ.get('CLIENT_ID')
 ENV_CLIENT_SECRET = os.environ.get('CLIENT_SECRET')
 ENV_USERNAME = os.environ.get('USERNAME')
 ENV_PASSWORD = os.environ.get('PASSWORD')
 
-bot = praw.Reddit(
+link_watcher = praw.Reddit(
   user_agent = 'SysAdministry Of Truth v0.1',
   client_id = ENV_CLIENT_ID,
   client_secret = ENV_CLIENT_SECRET,
@@ -14,8 +15,10 @@ bot = praw.Reddit(
   password = ENV_PASSWORD
 )
 
-comments = bot.subreddit('all').stream.comments()
+submissions = link_watcher.subreddit('all').stream.submissions()
 
-for comment in comments:
-  print(comment.author)
 
+for submission in submissions:
+  for link in link_blacklist:
+    if link in submission.url.lower():
+      print(submission.url.lower())
