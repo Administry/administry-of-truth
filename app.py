@@ -22,3 +22,4 @@ for submission in submissions:
   for link in link_blacklist:
     if link in submission.url.lower():
       print(submission.url.lower())
+      submission.reply('confirming test 2')
