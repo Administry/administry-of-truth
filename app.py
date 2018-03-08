@@ -22,15 +22,6 @@ conn = psycopg2.connect(ENV_DATABASE_URL, sslmode='require')
 
 db = conn.cursor()
 
-db.execute("INSERT INTO flagged_users (username) VALUES ('test')")
-
-db.execute("SELECT * FROM flagged_users")
-table = db.fetchall()
-
-print(table)
-
-conn.commit()
-
 def makebot ():
   return praw.Reddit(
   user_agent = 'SysAdministry Of Truth v0.1',
@@ -47,4 +38,6 @@ link_watcher = makebot().subreddit('all').stream.submissions()
 for submission in link_watcher:
   for source in link_blacklist:
     if source in submission.url.lower():
-      print(submission.author)
+      username = submission.author.name
+      db.execute("INSERT INTO flagged_users (username) VALUES (%s);", [username])
+      conn.commit()
