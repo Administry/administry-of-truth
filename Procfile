@@ -1,2 +1,2 @@
-release: python app.py
+release: python3 app.py
 web: python server.py
