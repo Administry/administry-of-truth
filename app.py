@@ -38,6 +38,12 @@ link_watcher = makebot().subreddit('all').stream.submissions()
 for submission in link_watcher:
   for source in link_blacklist:
     if source in submission.url.lower():
-      username = submission.author.name
-      db.execute("INSERT INTO flagged_users (username) VALUES (%s);", [username])
+      username = submission.author.name ## TO DO: Collect more data on violating users. Account age, Active communities, etc.
+      ## TO DO: create a separate table for the links themselves, store the links with relationships to the users that post them.
+      ## TO DO: create a table for violations. Just keep track of any violations, whether that is a comment with a link to a blacklisted item, or a post.
+      ## ^^ Relate violation records with users via ID.
+      db.execute("""
+        INSERT INTO flagged_users (username) VALUES (%s)
+        ON CONFLICT (username) DO NOTHING; 
+      """, [username]) ## TO DO: When there is a conflicting username, capture the link and keep a count of blacklist violations.
       conn.commit()
