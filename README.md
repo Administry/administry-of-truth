@@ -1,8 +1,12 @@
 # (AD[MIN)ISTRY] OF TRUTH
 
-> Admin - someone entrusted to act in the best interest of an online community.
+### ADMIN
+> An individual who is entrusted to act in the best interest of an online community and uphold it's standards. A servant of the community. 
 
-> Ministry of Truth - the infamous government bureaucracy responsible for the spead of propaganda and misinformation in George Orwell's dystopian masterpiece, 1984.
+### THE MINISTRY OF TRUTH
+> The infamous government bureaucracy responsible for the spead of propaganda and misinformation in George Orwell's dystopian masterpiece, 1984.
+
+---------------------------------
 
 Atro-turfing, Bots, Trolls (russian or otherwise), Shills, Propaganda, and "fake news" are all different heads of the same beast: Weponized Information. It is not an overstatement to say that we are living in a new age of psychological warfare, epitomized by misinformation campaigns via channels we have learned to trust.
 
