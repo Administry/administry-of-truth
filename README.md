@@ -8,7 +8,7 @@
 
 ---------------------------------
 
-Atro-turfing, Bots, Trolls (russian or otherwise), Shills, Propaganda, and "fake news" are all different heads of the same beast: Weponized Information. It is not an overstatement to say that we are living in a new age of psychological warfare, epitomized by misinformation campaigns via channels we have learned to trust.
+Bots, Trolls (russian or otherwise), Astro-turfing, Shills, Propaganda, and "fake news" are all different heads of the same beast: Weponized Misinformation. It is not an overstatement to say that we are living in a new age of psychological warfare, epitomized by misinformation campaigns via channels we have learned to trust.
 
 The goal of this project begins small: to build a bot that will monitor and record the activity of those who spread misinformation, propaganda, and lies on reddit. This information could be absolutely vital to understanding not only how these agents currently behave, but how they evolve. Patterns will emerge in the data which will help us find ways of combatting this misinformation problem head-on.
 
