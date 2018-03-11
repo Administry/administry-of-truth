@@ -17,6 +17,12 @@ The larger goal of the project is to develop a system that is capable of holding
 Although there will still be discussions and disagreements about political, social, and economic issues - as there always should be - it is vital that these discussions are built upon reality, and made in good faith. We must reclaim our right to information, and reclaim the internet for its role in the next evolution of humanity: The power of knowledge must be shared among us all.
 
 -------------------------------------------------------------------------------------------------------------------------
+
+Prerequisites
+-------------
+- Python 3 & Pip
+- Postgres database with URI / URL
+
 Getting started
 -----------------
 If you're interested in contributing, please reach out: stoptherussianredditbots@gmail.com
@@ -24,10 +30,13 @@ If you're interested in contributing, please reach out: stoptherussianredditbots
 To run the project locally, do the following:
 ```
 # clone the repository. From the terminal:
-https://github.com/Administry/administry-of-truth.git
+git clone https://github.com/Administry/administry-of-truth.git
+
+# move into the parent directory and install required packages. From the terminal:
+cd administry-of-truth && pip install -r requirements.txt
 
 # create your .env file inside the parent directory. From the terminal:
-cd administry-of-truth && touch .env
+touch .env
 
 # populate your .env file with the required environment variables. Descriptions provided below. In a text editor:
 export CLIENT_ID=''   ## provided by reddit
